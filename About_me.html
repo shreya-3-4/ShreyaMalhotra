@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Malhotra - Biomedical Engineering</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: system-ui, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: white;
+        }
+
+        nav {
+            background-color: rgba(91, 80, 131, 0.8);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(91, 80, 131, 0.9);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .dropbtn {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .about-me {
+            background-color: white;
+            color: #5B5083;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            text-align: center;
+            margin-top: 100px;
+            line-height: 1.6;
+        }
+
+        .about-me .text {
+            flex: 1;
+            padding-right: 20px;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+        }
+
+        .about-me h1 {
+            margin-bottom: 45px;
+            font-size: 70px;
+        }
+
+        .about-me .image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-me .image img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            background-color: rgba(91, 80, 131, 0.8);
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .social-icons a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+            <a href="About_me.html" class="dropbtn">About</a>
+            <div class="dropdown-content">
+                <a href="About_me.html">About Me</a>
+                <a href="About_ISM.html">About ISM</a>
+                <a href="About_Parm.html">About Mentor</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="Assessment.html" class="dropbtn">Assessments</a>
+            <div class="dropdown-content">
+                <a href="iw_assess.html">Interview Assesment</a>
+                <a href="rsrch_asses.html">Research Assessment</a>
+                <a href="mentor_assess.html">Mentor Interaction</a>
+                <a href="shadow_assess.html">Shadow Experience</a>
+            </div>
+        </div>
+        <a href="C&F.html">Career & Industry Forecast</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Original Work</a>
+            <div class="dropdown-content">
+                <a href="Original_Work.html">Original Work Proposal</a>
+                <a href="OgWork_Updates.html">Original Work Progress</a>
+            </div>
+        </div>
+        <a href="Topic_Proposal.html">Topic Proposal</a>
+        <a href="Mentor_Log.html"> Mentor Log </a>
+    </nav>
+
+
+    <div id="about-me" class="about-me">
+        <div class="text">
+            <h1>About Me</h1>
+            <p>Hi! My name is Shreya. I am a motivated junior at Memorial High School with a strong interest in biomedical engineering, particularly neuroengineering. I’m fascinated by the intersection of technology and biology and its potential to improve lives. Through ISM, I’m currently exploring this field further by shadowing a professional and conducting research.</p>
+            <p>With my curiosity, creativity, and dedication, I aspire to contribute to innovative projects that make a meaningful impact.</p>
+        </div>
+        <div class="image">
+            <img src="Me.png" alt="Shreya Malhotra">
+        </div>
+    </div>
+
+    <footer>
+        <p>Connect with me through my socials</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/shreya-malhotra-59a9602b3/" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=malhotrashreya826@gmail.com&su=Hello%20Shreya&body=Hi%20Shreya,%20I%20wanted%20to%20say%20hello" target="_blank">
+                <img src="gmail.png" alt="Gmail">
+            </a>
+        </div>
+        <p class="credit">Designed and developed by Shreya Malhotra</p> <!-- Add this line -->
+    </footer>
+</body>
+</html>
